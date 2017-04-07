@@ -6,7 +6,7 @@ package com.priyabrat.cleanmvp.login;
 
 public class LoginContract {
 
-    interface View {
+    public interface View {
         String getUserName();
         String getUserPass();
         void setUserName(String userName);
@@ -15,13 +15,13 @@ public class LoginContract {
         void showUserSaved();
     }
 
-    interface Presenter {
+    public interface Presenter {
         void setView(LoginContract.View loginView);
         void onLoginClicked();
         void getCurrentUser();
     }
 
-    interface Model {
+    public interface Model {
         void createUser(User user);
         User getUser();
     }

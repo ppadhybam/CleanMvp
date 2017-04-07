@@ -1,5 +1,7 @@
 package com.priyabrat.cleanmvp.login;
 
+import com.priyabrat.cleanmvp.R;
+
 /**
  * Created by PriyabratP on 03-04-2017.
  */
@@ -37,6 +39,8 @@ public class LoginPresenter implements LoginContract.Presenter {
             if(user!=null){
                 view.setUserName(user.getUserName());
                 view.setUserPass(user.getUserPass());
+            }else {
+                view.onErrorMessage("No User");
             }
         }
     }

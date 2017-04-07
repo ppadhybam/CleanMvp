@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CleanMvp</string>
+    <string name="error_user">No User</string>
 </resources>
